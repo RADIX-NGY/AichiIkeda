@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+/* reset
+---------------------------------------------------- */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:middle;
+	background:transparent;
+	-webkit-text-size-adjust: 100%;
+}
+
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+	display:block;
+}
+
+nav ul {
+	list-style:none;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+
+a {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+ins {
+	background-color:#ff9;
+	color:#000;
+	text-decoration:none;
+}
+
+mark {
+	background-color:#ff9;
+	color:#000;
+	font-style:italic;
+	font-weight:bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+	border-bottom:1px dotted #000;
+	cursor:help;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+	vertical-align:middle;
+}
+
+
+/*
+---------------------------------------------------- */
+.clearfix::after {
+	content: "";
+  display: block;
+  clear: both;
+}
+
+
+a{outline:none;}
+
+body{font-size:90%;
+line-height:1.8em;
+font-family:"ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", Osaka," メイリオ", "ＭＳ Ｐゴシック", Meiryo, sans-serif;color:#333;max-height: 999999px; }
+
+
+/* link
+---------------------------------------------------- */
+a:link,a:visited{color:#3a73bd;text-decoration:underline;}
+a:hover,a:active{color:#3a73bd;text-decoration:none;}
+
+
+body{ margin:0px ; padding:0px;}
+.wrap  img{ margin:0px auto}
+
+#pagetop {
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+}
+
+
+
+/* swiper
+---------------------------------------------------- */
+.swiper-wrapper{
+	margin:0 auto;
+	background: url("../images/main_bg.jpg") repeat-x top;
+}
+.swiper-slide img{
+   width: 100%;
+   max-width: 1689px;
+   float: right;
+   object-fit: cover;
+    padding-left: 50px
+}
+
+/*swiperの印刷対応*/
+@media print{
+.swiper-slide{
+  width: 1110px !important;
+  transform: translate3d(-1150px, 0, 0) !important;
+}
+.swiper-slide img{
+	width: 1100px;
+	height: 389px;
+}
+}
+
+
+/* 固定メニュー
+---------------------------------------------------- */
+.head{
+	position: relative;
+	background-color: #051a52;
+    height: 80px;
+}
+
+.logo{
+	position: absolute;
+	top: 20px;
+	left: 30px;
+}
+.menu{
+	position: absolute;
+	top: 28px;
+	right: 30px;
+}
+
+#navibar {
+  width: 100%;
+  height: 80px;
+  z-index: 100;
+  background-color:#051a52;
+  box-shadow: 0px 0px 16px -6px rgba(91,91,91,0.6);
+
+}
+.cb-header {
+ position: fixed;/* 固定 */
+ top: 0;/* 上から0の位置に固定 */
+ left: 0;/* 左から0の位置に固定 */
+ display: none;/* 非表示 */
+	text-align: center; /*ロゴとメニューをfloatするときは消す*/
+}
+.sc {
+ width: 100%;
+ margin: 0 auto;
+}
+.clear{
+	clear: both;
+}
+.footer{
+ padding: 5em 0px;
+}
+
+
+/*top*/
+.sec1 {
+ padding: 6em 0px;
+ background: #fff;
+ text-align: center;
+}
+.sec2 {
+ padding: 6em 0px;
+ background: url("../images/sec2_img.png") no-repeat right center  /cover #051a52;
+}
+.sec3 {
+ padding: 6em 0px;
+ background: #eee;
+ text-align: center;
+}
+.sec4 {
+ padding: 6em 0px;
+ background: #fff;
+ text-align: center;
+}
+.sec5 {
+ padding: 6em 0px;
+ background: #051a52;
+ text-align: center;
+}
